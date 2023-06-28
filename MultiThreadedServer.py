@@ -7,7 +7,7 @@ port = 1233
 ThreadCount = 0
 
 try:  
-    serversocket.bind(host,port)
+    serversocket.bind((host,port))
 except socket.error as e: 
     print(str(e))
 print("waiting for connection")
